@@ -12,16 +12,16 @@ import { AuthProvider } from './components/Auth'
 
 function App() {
     return (
-        <AuthProvider>
-            <BrowserRouter>
+        <BrowserRouter>
+            <AuthProvider>
                 <Routes>
                     <Route exact path="/" element={<Home />} />
                     <Route exact path="/dashboard" element={<Dashboard />} />
                     <Route exact path="/login" element={<LogIn />} />
                     <Route exact path="/signup" element={<SignUp />} />
                 </Routes>
-            </BrowserRouter>
-        </AuthProvider>
+            </AuthProvider>
+        </BrowserRouter>
     );
 }
 
